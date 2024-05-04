@@ -1,7 +1,12 @@
 nav {
     background-color: steelblue;
-    display: block;
     padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
 }
 
 h1{
