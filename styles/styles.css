@@ -1,3 +1,7 @@
-p {
+p,
+li,
+h1 {
     color: red;
+    width: 500px;
+    border: 1px solid black;
   }
