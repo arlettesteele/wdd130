@@ -24,3 +24,35 @@ img {
 p {
     padding: 10px;
 }
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: auto;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #ade8f4;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p { padding: 0;}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px;
+    text-align: center;
+}
