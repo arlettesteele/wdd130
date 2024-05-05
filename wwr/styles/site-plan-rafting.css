@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #90903E
+    --secondary-color: #733D2C
+    --accent1-color: #1EA192
+    --accent2-color: #84A89D
+
+    --heading-font: 'young', serif;
+    --paragraph-font: 'PT', serif;
+
+    --nav-backround-color: ##C4BB9C;
+    --nav-link-color: #192120
+    --nav-hover-link-color: #1EA192
+    --nav-hover-backround-color: #90903E
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-backround-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-backround-color);
+}
