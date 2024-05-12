@@ -6,23 +6,26 @@
 }
 
 header img{
-    width: 197px;
-    margin: 20px;
+    width: 20%;
+    margin: 2%;
 }
 
 header nav a {
     color: black;
     display: inline-block;
-    margin-left: 20px;
-    padding: 0px;
+    margin-left: 2%;
     font-weight: 600;
     text-decoration: none;
 
 }
 
+section img {
+    object-fit: cover;
+}
+
 main {
     display: block;
-    margin: 20px;
+    margin: 2%;
 }
 
 .hero {
@@ -46,16 +49,16 @@ main {
     text-align: left;
     background-color: rgba(40, 88, 48, 0.76);
     color: white;
-    font-size: 20px;
-    padding: 100px;
+    font-size: 80%;
+    padding: 5%;
   
 }
 
 
 .hero article img{
     position: absolute;
-    top: 40%;
-    right: 45px;
+    top: 41%;
+    right: 3%;
     width: 30%;
     height: auto;
     float: inline-end;
@@ -67,8 +70,8 @@ main {
     width: 100%;
     background-color: rgba(60, 92, 86, 0.781);
     color: white;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 100%;
+    padding: 1%;
    
 }
 
