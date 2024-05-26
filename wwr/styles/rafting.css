@@ -5,75 +5,144 @@
     font-family: "poppins" , Arial;
 }
 
-header img{
-    width: 20%;
-    margin: 2%;
+:root {
+    --rem: 16;
+    view-transition-name: root;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header nav a {
+header {
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+}
+header, h2, p, div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+nav a {
     color: black;
-    display: inline-block;
-    margin-left: 2%;
     font-weight: 600;
+    font-size: 125%;
     text-decoration: none;
+    padding: 50px;
 
 }
 
-section img {
-    object-fit: cover;
+section h2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
 }
+
 
 main {
-    display: block;
     margin: 2%;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
 .hero {
     display: flex;
+    flex-direction: column;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
 .hero img {
-    width: 100%;
+    width: 80%;
+    height: auto;
     object-fit: cover;
 }
 
-.hero article p {
+.hero article {
     position: absolute;
-    top: 38%;
-    left: 0;
-    width: 67%;
-    float: left;
-    text-align: left;
+    top: 45%;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgba(40, 88, 48, 0.76);
     color: white;
-    font-size: 80%;
-    padding: 5%;
-  
+    font-size: 150%; 
+    padding: 20px
 }
 
+.hero article p {
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+}
 
 .hero article img{
-    position: absolute;
-    top: 41%;
-    right: 3%;
     width: 30%;
     height: auto;
-    float: inline-end;
 }
 
 .hero h1 {
     position: absolute;
     top: 10%;
-    width: 100%;
+    width: 78%;
     background-color: rgba(60, 92, 86, 0.781);
     color: white;
-    font-size: 100%;
-    padding: 1%;
-   
+    font-size: 3em;
+    font-weight: 400;
+    padding: 10px 0;
 }
 
+.adventure {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40% 50% 10%;
+}
 
+.adventure h2{
+    grid-column: 2/4;
+    grid-row: 1;
+}
 
+.adventure img {
+    grid-row: 2;
+    justify-content: space-around;
+    
+}
+
+.adventure p{
+    grid-row: 3;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
+} 
+
+.sociallinks img{
+    width: 40px;
+    height: auto;
+}
