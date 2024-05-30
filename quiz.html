@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="quiz" content="width=device-width, initial-scale=1.0">
+        <title>Quiz | WDD130</title>
+        <meta name="description" content="Questions about HTML and CSS, Arlette Steele">
+        <meta name="author" content="Arlette Steele">
+        <link rel="stylesheet" href="styles/quiz.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>       
+        <form class="quiz">
+            <h1> Basic HTML and CSS Quiz</h1>
+            <ol>
+                <ul>
+                    <label for="q1">What does HTML stands for?</label><br>
+                    <input type="text" id="q1" name="q1"><br>
+                </ul>
+                <ul>
+                    <label for="q2">List the main elements to code an HTML program </label><br>
+                    <textarea id="q2" name="q2" rows="2" cols="5"></textarea><br>
+                </ul>
+                <ul>
+                    <label for="q3">Which element do you start an HTML document with?</label><br>
+                    <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="html lang">&lt;html lang="en-US"&gt;</option>
+                    <option value="meta">&lt;meta&gt;</option>
+                    <option value="doctype">&lt;!DOCTYPE html&gt;</option>
+                    <option value="head">&lt;head&gt;</option>
+                    </select>
+                </ul>
+                <ul>
+                    <label for="q4">What is the bottom margin given this declaration?</label>
+                    <img src="images/margin quiz.png" alt="margin: 20px 7px 10px;">
+                    <input type="number" id="q4" name="q4"><br>
+                </ul>
+                <button type="submit" onclick="alert('Your form has been submitted!')">Submit Quiz</button>
+            </ol>
+            
+        </form>
+    </body>
+</html>
