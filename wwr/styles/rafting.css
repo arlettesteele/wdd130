@@ -1,30 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 * {
     box-sizing: border-box;
-    font-family: "poppins" , Arial;
+    font-family: "Nunito Sans" , sans-serif;
 }
 
 :root {
-    --rem: 16;
-    view-transition-name: root;
+    --primary-color: #997b66;
+    --secondary-color: #9B9B7A;
+    --background-color: #e9edc9;
+    --text2-color: #283618;
+    --text-color: #0a0908;
+    --buttom-color: #333d29;
+
 }
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    flex-direction: row;
     align-items: center;
 }
 
 header {
-    width: 80%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 0.6rem auto;
     display: grid;
     grid-template-columns: 120px 1fr 2fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1.5px solid #ccc; */
 
 }
-header, h2, p, div {
+header, h1, h2, p, div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,6 +36,14 @@ header, h2, p, div {
     
 }
 
+h1 {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-size: 44px;
+    padding-bottom: 5px;
+}
 nav a {
     color: black;
     font-weight: 600;
@@ -41,21 +53,14 @@ nav a {
 
 }
 
-section h2 {
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 500;
-}
-
-
 main {
     margin: 2%;
+    
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
 }
@@ -117,24 +122,31 @@ footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 40% 50% 10%;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .adventure h2{
     grid-column: 2/4;
     grid-row: 1;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .adventure img {
     grid-row: 2;
     justify-content: space-around;
+    margin-left: 100px ;
     
 }
 
 .adventure p{
     grid-row: 3;
     justify-content: space-around;
-    padding: 0;
+    padding-top: 45px;
     margin: 0;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .sociallinks {
@@ -145,4 +157,165 @@ footer {
 .sociallinks img{
     width: 40px;
     height: auto;
+}
+
+/* classes of contact us page */
+
+.reach-out {
+    width: 1300px;
+    padding: 30px;
+    margin-left: 15%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.reach-out p {
+    margin-top: 2px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    column-gap: 160px;
+    position: relative;
+    margin-top: -45px
+}
+.contact {
+    flex-flow: row wrap;
+    border: 2px solid #b3be94;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+
+}
+
+.contact h2 {
+    margin: 0;
+}
+
+.contact p {
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact img {
+    margin: 10px;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 10%;
+
+}
+
+.address h3{
+    margin-bottom: 10px;
+    color: var(--text2-color);
+    font-size: 35px;
+}
+
+.address p {
+    margin-right: 200px;
+}
+
+
+
+.Team {
+    text-align: center;
+    margin: 5% 10%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Team h4 {
+    font-size: 3em;
+    margin: 10px;
+    color: var(--text-color);
+}
+
+.employee-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: 1 1 30%;
+
+}
+
+.employee img {
+    justify-content: center;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+.employee h5 {
+    
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: var(--text2-color);
+}
+
+.employee p { 
+    margin: 0;
+    font-size: 1em;
+    color: darkolivegreen;
+}
+
+.message {
+    text-align: center;
+    width: 70%;
+    padding: 5%;
+    margin-left: 18%;
+    background-color: var(--secondary-color);
+}
+
+.message h3 {
+    height: 35px;
+    font-size: 3em;
+    margin: 0px;
+}
+
+.radio {
+    display: grid;
+    margin: 0 25% 0 25%;
+    text-align: left;
+}
+
+.radio label {
+    font-weight: 600;
+}
+
+.radio textarea {
+    height: 70px;
+}
+
+.radio button {
+    height: 50px;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: var(--primary-color);
+    border-color: #5e503f;
+    color: #fff;
 }
