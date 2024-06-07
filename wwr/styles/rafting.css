@@ -535,5 +535,9 @@ footer {
     margin-bottom: 150px;
 }
 
+.wireframe button {
+    background-color: var(--buttom-color);
+    color: var(--background-color);
+}
 
      
